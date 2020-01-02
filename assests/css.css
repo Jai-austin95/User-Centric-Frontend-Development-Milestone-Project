@@ -1,0 +1,49 @@
+body {
+    background-color: #000000;
+}
+
+#logo {
+  float: left;
+  width: 300px;
+  height: 100px;
+  margin-left: 0;
+  margin-top: 0;
+  background-image: url("https://b035f6bc-5f5c-4734-9fb7-a50a89a7f7c6.ws-eu01.gitpod.io/mini-browser/workspace/User-Centric-Frontend-Development-Milestone-Project/assests/images/Halveksia%20Logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 2px;
+  border-color: #000000;
+
+}
+
+#menu {
+  font-size:110%;
+  list-style-type: none;
+  letter-spacing: 4px;
+  color: #ffffffff;
+  
+}
+
+#logo, #menu {
+  line-height: 75px;
+
+}
+
+#menu li {
+  float: right;
+  margin-right: 30px;
+  
+}
+
+#menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#menu a:hover{
+  border-bottom: 1px solid #ffffff;
+}
+
+.active {
+   border-bottom: 1px solid #ffffff;
+}
