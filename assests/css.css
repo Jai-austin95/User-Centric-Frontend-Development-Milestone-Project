@@ -1,19 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
+
 body {
     background-color: #000000;
 }
 
+
+
 #logo {
   float: left;
-  width: 300px;
-  height: 100px;
-  margin-left: 0;
-  margin-top: 0;
-  background-image: url("https://b035f6bc-5f5c-4734-9fb7-a50a89a7f7c6.ws-eu01.gitpod.io/mini-browser/workspace/User-Centric-Frontend-Development-Milestone-Project/assests/images/Halveksia%20Logo.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: 2px;
-  border-color: #000000;
-
+  font-size: 280%;
+  margin-left: 30px;
+  font-family: 'Lobster Two', cursive;
+  color: #ffffff;
 }
 
 #menu {
@@ -46,4 +45,34 @@ body {
 
 .active {
    border-bottom: 1px solid #ffffff;
+}
+
+#band-photo {
+  height: 600px;
+  width: 100%;
+  background: url("https://b035f6bc-5f5c-4734-9fb7-a50a89a7f7c6.ws-eu01.gitpod.io/mini-browser/workspace/User-Centric-Frontend-Development-Milestone-Project/assests/images/band-photo.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#band-photo-outer {
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+#band-cover-text {
+  font-size: 50%;
+  font-family: 'Girassol', cursive;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #ffffff;
+  height: 200px;
+  padding-top: 40px;
+  padding-left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 30px;
+  right: 150px;
+  position: absolute;
 }
