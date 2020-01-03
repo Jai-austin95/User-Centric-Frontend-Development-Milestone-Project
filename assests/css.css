@@ -83,3 +83,16 @@ body {
   float: left;
   position: absolute;
 }
+
+#band-logo-outer {
+    height: 600px;
+    width: 100%;
+}
+
+#band-logo {
+    height: 400px;
+    width: 100%;
+    background-image: url("https://i.imgur.com/ANSTG7J.jpg") center center no-repeat;
+    
+
+}
