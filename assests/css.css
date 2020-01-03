@@ -147,21 +147,30 @@ body {
     letter-spacing: 2px
 }
 
+
+/*------------ Up Coming Shows ------------ */
+
+
 #up-coming-shows {
     height: 725px;
     width: 100%;
+    border: 4px;
+    border-color: #ffffff;
+    border: solid;
+    
 }
 
 #up-coming-shows-1 {
     float: left;
     height: 725px;
     width: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
+    
     color: #ffffff;
     font-family: 'Girassol', cursive;
     border: 4px;
     border-color: #ffffff;
-    
+    border: solid;
+    background-image: url("https://i.imgur.com/YPnymL2.jpg");
     
 
 }
@@ -170,11 +179,18 @@ body {
     float: right;
     height: 725px;
     width: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #000000;
     color: #ffffff;
     font-family: 'Girassol', cursive;
-    border: 4px;
+     border: 4px;
     border-color: #ffffff;
+    border: solid;
+}
     
+
+
+#up-coming-shows-2 h1 {
+    text-align: center;
+    padding-top: 20px;
 
 }
