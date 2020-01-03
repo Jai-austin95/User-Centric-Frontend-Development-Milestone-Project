@@ -146,3 +146,35 @@ body {
     padding-right: 25px;
     letter-spacing: 2px
 }
+
+#up-coming-shows {
+    height: 725px;
+    width: 100%;
+}
+
+#up-coming-shows-1 {
+    float: left;
+    height: 725px;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: 'Girassol', cursive;
+    border: 4px;
+    border-color: #ffffff;
+    
+    
+
+}
+
+#up-coming-shows-2 {
+    float: right;
+    height: 725px;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: 'Girassol', cursive;
+    border: 4px;
+    border-color: #ffffff;
+    
+
+}
