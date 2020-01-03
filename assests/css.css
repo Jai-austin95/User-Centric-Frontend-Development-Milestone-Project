@@ -52,7 +52,7 @@ body {
    border-bottom: 1px solid #ffffff;
 }
 
-/* ----------- Main About Page -----------*/
+/* ----------- Main Page -----------*/
 
 #band-photo {
   height: 600px;
@@ -84,8 +84,10 @@ body {
   position: absolute;
 }
 
+/* ----------- About Page -----------*/
+
 #band-logo-outer {
-    height: 600px;
+    height: 725px;
     width: 100%;
 }
 
@@ -93,6 +95,54 @@ body {
     height: 400px;
     width: 100%;
     background-image: url("https://i.imgur.com/ANSTG7J.jpg") center center no-repeat;
+    position: relative;
+    
+}
+
+#band-info-1 {
+    float: left;
+    height: 325px;
+    width: 75%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: 'Girassol', cursive;
+    border: 4px;
+    border-color: #ffffff;
+    
     
 
+}
+
+#band-info-2 {
+    float: right;
+    height: 325px;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: 'Girassol', cursive;
+    border: 4px;
+    border-color: #ffffff;
+    
+
+}
+
+#band-info-1 > h2 {
+    padding-left: 25px;
+    letter-spacing: 2px
+}
+
+#band-info-1 > p {
+    padding-left: 25px;
+    letter-spacing: 2px;
+    padding-right: 50px;
+}
+
+#band-info-2 > h2 {
+    padding-right: 25px;
+    letter-spacing: 2px
+}
+
+#band-info-2 > p {
+    padding-right: 25px;
+    letter-spacing: 2px
 }
