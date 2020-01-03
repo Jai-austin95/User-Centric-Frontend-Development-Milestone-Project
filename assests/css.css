@@ -9,9 +9,10 @@ body {
 
 #logo {
   float: left;
+  letter-spacing: 3px;
   font-size: 280%;
   margin-left: 30px;
-  font-family: 'Lobster Two', cursive;
+  font-family: 'Girassol', cursive;
   color: #ffffff;
 }
 
