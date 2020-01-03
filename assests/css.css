@@ -7,31 +7,43 @@ body {
 
 /* -------------- navigation ------------- */
 
+#navbar {
 
-
-#logo {
-  float: left;
-  letter-spacing: 3px;
-  font-size: 280%;
-  margin-left: 30px;
-  font-family: 'Girassol', cursive;
-  color: #ffffff;
-  
-  
-  
-  
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 1;
 
 }
 
+#logo {
+  width: 50%;
+  float: left;
+  letter-spacing: 3px;
+  font-size: 280%;
+  font-family: 'Girassol', cursive;
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: fixed;
+  background-color:rgba(0, 0, 0, 0.5);
+  
+}
+
 #menu { 
+  width: 50%;  
   right: 0;
+  top: 0;
   font-size:110%;
   list-style-type: none;
   letter-spacing: 4px;
+  font-family: 'Girassol', cursive;
   color: #ffffffff;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
   
-  
-  
+
 }
 
 #logo, #menu {
@@ -70,6 +82,7 @@ body {
   width: 100%;
   background: url("https://i.imgur.com/8Wqfad4.jpg") no-repeat center center;
   background-size: cover;
+  z-index: -1;
 }
 
 #band-photo-outer {
@@ -77,7 +90,7 @@ body {
   width: 100%;
   overflow: hidden;
   position: relative;
-  margin-top: 50px;
+  margin-top: 80px;
   
 }
 
@@ -178,8 +191,7 @@ body {
 #up-coming-shows {
     height: 725px;
     width: 100%;
-     margin: 0 auto;
-    
+
 }
 
 #up-coming-shows-1 {
