@@ -108,7 +108,7 @@ body {
     font-family: 'Girassol', cursive;
     border: 4px;
     border-color: #ffffff;
-    
+    border: solid;
     
 
 }
@@ -122,29 +122,43 @@ body {
     font-family: 'Girassol', cursive;
     border: 4px;
     border-color: #ffffff;
+    border: solid;
+   
+    
     
 
 }
 
 #band-info-1 > h2 {
+    padding-top: 25px;
     padding-left: 25px;
-    letter-spacing: 2px
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 #band-info-1 > p {
     padding-left: 25px;
     letter-spacing: 2px;
     padding-right: 50px;
+    text-align: center;
 }
 
 #band-info-2 > h2 {
-    padding-right: 25px;
-    letter-spacing: 2px
+    padding-top: 25px;
+    letter-spacing: 2px;
+    text-align: center
 }
 
 #band-info-2 > p {
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#band-info-2 > ul > li {
     padding-right: 25px;
-    letter-spacing: 2px
+    letter-spacing: 2px;
+    text-align: center;
+    list-style: none;
 }
 
 
@@ -157,6 +171,7 @@ body {
     border: 4px;
     border-color: #ffffff;
     border: solid;
+    margin: 0 auto;
     
 }
 
@@ -164,13 +179,17 @@ body {
     float: left;
     height: 725px;
     width: 50%;
-    
+    background-image: url("https://i.imgur.com/YPnymL2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
     color: #ffffff;
     font-family: 'Girassol', cursive;
     border: 4px;
     border-color: #ffffff;
     border: solid;
-    background-image: url("https://i.imgur.com/YPnymL2.jpg");
+    margin: 0 auto;
+    
+    
     
 
 }
@@ -185,6 +204,8 @@ body {
      border: 4px;
     border-color: #ffffff;
     border: solid;
+    margin: 0 auto;
+    
 }
     
 
