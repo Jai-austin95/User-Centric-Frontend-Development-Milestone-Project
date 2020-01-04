@@ -230,3 +230,60 @@ body {
     padding-top: 20px;
 
 }
+
+#up-coming-shows-2 > ul > li {
+    padding-top: 50px;
+    padding-right: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    list-style: none;
+
+}
+
+/*------------ Contact ------------ */
+
+#contact-page {
+    height: 725px;
+    width: 100%;
+
+}
+
+#contact-L {
+    float: left;
+    height: 725px;
+    width: 50%;
+    color: #ffffff;
+    font-family: 'Girassol', cursive;
+    border-top: 4px solid #ffffff;
+    margin: 0 auto;
+}
+
+#contact-L > h1 {
+    text-align: center;
+    padding-top: 70px;
+}
+
+#contact-L > h3 {
+    padding-left: 250px;
+    padding-top: 50px;
+    
+}
+
+#contact-R {
+    float: right;
+    height: 725px;
+    width: 50%;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Girassol', cursive;
+    margin: 0 auto;
+    border-top: 4px solid #ffffff;
+    border-left: 4px solid #ffffff;
+   
+}
+
+#band-logo-image {
+    height: 724px;
+    width: 100%;
+
+}
