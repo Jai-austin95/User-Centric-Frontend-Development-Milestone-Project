@@ -114,36 +114,15 @@ header {
     width: 100%;
 }
 
-#band-logo {
-    height: 400px;
-    width: 100%;
-    background-image: url("https://i.imgur.com/ANSTG7J.jpg") center center no-repeat;
-    position: relative;
-    
-}
 
 #band-info-1 {
     float: left;
-    height: 325px;
-    width: 65%;
+    height: 725px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     text-align: left;
     border-top: 4px solid #ffffff;
-    
-    
-
-}
-
-#band-info-2 {
-    float: right;
-    height: 325px;
-    width: 35%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    border-top: 4px solid #ffffff;
-    text-align: left;
-
     
     
 
@@ -232,15 +211,15 @@ header {
 
 }
 
-/*------------ Contact ------------ */
+/*------------ Band Members ------------ */
 
-#contact-page {
+#members-page {
     height: 725px;
     width: 100%;
 
 }
 
-#contact-L {
+#members-page-L {
     float: left;
     height: 725px;
     width: 50%;
@@ -249,19 +228,20 @@ header {
     margin: 0 auto;
 }
 
-#contact-L > h1 {
-    text-align: center;
-    padding-top: 225px;
+#members-page-L > h1 {
+    text-align: left;
+    padding-top: 25px;
+    padding-left: 25px;
 }
 
-#contact-L > h3 {
-    padding-left: 250px;
+#members-page-L > h3 {
+    padding-left: 25px;
     padding-top: 50px;
     text-transform: uppercase;
     
 }
 
-#contact-R {
+#members-page-R {
     float: right;
     height: 725px;
     width: 50%;
@@ -271,6 +251,12 @@ header {
     border-top: 4px solid #ffffff;
     border-left: 4px solid #ffffff;
    
+}
+
+#members-page-L > ul > li {
+    
+    letter-spacing: 2px;
+    list-style: none;
 }
 
 #band-logo-image {
