@@ -130,7 +130,7 @@ header {
 }
 
 #band-info-1 > h2 {
-    padding-top: 40px;
+    padding-top: 75px;
     padding-left: 25px;
     letter-spacing: 2px;
 }
@@ -249,7 +249,7 @@ border: 3px #ffffff solid;
 
 #members-page-L > h1 {
     text-align: left;
-    padding-top: 25px;
+    padding-top: 75px;
     padding-left: 25px;
 }
 
@@ -273,7 +273,7 @@ border: 3px #ffffff solid;
 }
 
 #members-page-L > ul > li {
-    padding: 10px 5px;
+    padding: 3px 5px;
     letter-spacing: 2px;
     list-style: none;
 }
