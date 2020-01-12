@@ -414,7 +414,7 @@ justify-content: center;
 }
 
 #band-logo-image {
-    height: 724px;
+   
     width: 100%;
 
 }
@@ -458,6 +458,7 @@ justify-content: center;
    }
 
    #up-coming-shows-1 {
+    min-height: 480px;
     width: 100%
    }
 
@@ -465,7 +466,15 @@ justify-content: center;
     width: 100%;
     border-left: none;
     min-height: 390px;
-   }        
+   }
+
+   #up-coming-shows-2 h1 {
+       padding-top: 25px;
+   }   
+
+   #up-coming-shows-2 h2 {
+       padding-bottom: 25px;
+   }     
 
    #members-page {
     flex-direction: column;
@@ -511,5 +520,9 @@ justify-content: center;
 
   #menu > li {
       margin-bottom: 12px;
+  }
+
+  #footer {
+      padding: 0;
   }
 }
