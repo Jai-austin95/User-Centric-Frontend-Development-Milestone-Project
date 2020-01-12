@@ -16,6 +16,32 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Girassol', cursive;
 }
 
+p {
+    line-height: 2;
+    font-weight: 400;
+    color: #808080;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* -------------- Generic ------------- */
+
+.button {
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: #000000;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 300ms ease;
+}
+
+.button:hover {
+    background-color: #a4a4a4;
+    color: #000000;
+    text-decoration: none;
+}
+
 /* -------------- navigation ------------- */
 
 header {
@@ -29,6 +55,7 @@ header {
 
 #navbar {
     display: flex;
+    position: relative;
     width: 100%;
     align-items: center;
     padding: 20px 60px;
@@ -43,6 +70,7 @@ header {
 
 #menu { 
   display: flex;
+  flex-wrap: wrap;
   font-size: 16px;
   list-style-type: none;
   color: #ffffff;
@@ -78,6 +106,88 @@ header {
    border-bottom: 1px solid #ffffff;
 }
 
+.hamburger-icon {
+   display: none;
+   margin-left: auto;
+}
+
+.hamburger-icon #nav-toggle {
+    color: #ffffff;
+
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 24px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.hamburger-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger-icon span:nth-child(2), .hamburger-icon  span:nth-child(3) {
+  top: 12px;
+}
+
+.hamburger-icon span:nth-child(4) {
+  top: 24px;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hamburger-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger-icon.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
 /* ----------- Main Page -----------*/
 
 #band-photo {
@@ -99,44 +209,51 @@ header {
 
 #band-cover-text {
   font-size: 50%;
-  text-transform: uppercase;
   letter-spacing: 4px;
   color: #ffffff;
-  height: 200px;
   padding-top: 40px;
+  padding-bottom: 40px;
   padding-left: 10px;
   background-color: rgba(0, 0, 0, 0.7);
   bottom: 30px;
-  float: left;
   position: absolute;
+}
+
+#band-cover-text h4 {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* ----------- About Page -----------*/
 
 #band-logo-outer {
-    height: 725px;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    border-top: 4px solid #ffffff;
 }
 
 
-#band-info-1 {
-    float: left;
-    height: 725px;
+#band-info-1 { 
+    padding-top: 75px;
+    padding-bottom: 75px;
+    max-width: 800px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.25);
     color: #ffffff;
     text-align: left;
-    border-top: 4px solid #ffffff;
+   
 }
 
 #band-info-1 > h2 {
-    padding-top: 75px;
+    
     padding-left: 25px;
     letter-spacing: 2px;
 }
 
 #band-info-1 > p {
-   
+
     letter-spacing: 2px;
     padding-right: 50px; 
     padding-left: 25px;
@@ -163,14 +280,15 @@ header {
 
 
 #up-coming-shows {
-    height: 725px;
+    display: flex;
+    min-height: 725px;
     width: 100%;
 
 }
 
 #up-coming-shows-1 {
-    float: left;
-    height: 725px;
+    
+    min-height: 725px;
     width: 50%;
     background-image: url("https://i.imgur.com/YPnymL2.jpg");
     background-size: contain;
@@ -184,14 +302,15 @@ header {
 }
 
 #up-coming-shows-2 {
-    float: right;
-    height: 725px;
+    
+    min-height: 725px;
     width: 50%;
     background-color: #000000;
     color: #ffffff;
     border-top: 4px solid #ffffff;
     border-left: 4px solid #ffffff;
     border-bottom: 4px solid #ffffff;
+    text-align: center;
    
     
 }
@@ -199,28 +318,27 @@ header {
 
 
 #up-coming-shows-2 h1 {
+    
     text-align: center;
     padding-top: 125px;
 
 }
 
-#up-coming-shows-2 > ul {
-    padding-right: 5px;
-    letter-spacing: 2px;
-    text-align: center;
-    list-style: none;
 
-}
 
 #show-card {
 padding: 0;
 height:250px;
-width: 375px;
+max-width: 375px;
+width: 100%;
 margin: 0 auto;
 background-color: rgba(163, 162, 162, 0.452);
 background-position: center;
 text-align: center;
 border: 3px #ffffff solid;
+display: flex;
+align-items: center;
+justify-content: center;
 
 }
 
@@ -230,17 +348,22 @@ border: 3px #ffffff solid;
 
 }
 
+#show-card p {
+    color: #ffffff;
+}
+
 /*------------ Band Members ------------ */
 
 #members-page {
-    height: 725px;
+    display: flex;
+    min-height: 725px;
     width: 100%;
 
 }
 
 #members-page-L {
-    float: left;
-    height: 725px;
+    
+    min-height: 725px;
     width: 50%;
     color: #ffffff;
     border-top: 4px solid #ffffff;
@@ -261,8 +384,8 @@ border: 3px #ffffff solid;
 }
 
 #members-page-R {
-    float: right;
-    height: 725px;
+    
+    min-height: 725px;
     width: 50%;
     background-color: #000000;
     color: #ffffff;
@@ -272,10 +395,22 @@ border: 3px #ffffff solid;
    
 }
 
+#members-page-L > ul {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 #members-page-L > ul > li {
     padding: 3px 5px;
     letter-spacing: 2px;
     list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#members-page-L > ul > li > p {
+    padding-left: 12px;
 }
 
 #band-logo-image {
@@ -291,7 +426,7 @@ border: 3px #ffffff solid;
     border-color: #cccccc;
     border-width: 3px;
     border-radius: 50%;
-    margin: 0 auto;
+    
 }
 
 /*-------------- Footer -------------*/
@@ -316,3 +451,65 @@ border: 3px #ffffff solid;
 
 /*-------------- Mobile -------------*/
 
+@media only screen and (max-width: 768px) {
+
+   #up-coming-shows {
+    flex-direction: column;
+   }
+
+   #up-coming-shows-1 {
+    width: 100%
+   }
+
+   #up-coming-shows-2 {
+    width: 100%;
+    border-left: none;
+    min-height: 390px;
+   }        
+
+   #members-page {
+    flex-direction: column;
+   }
+   
+   #members-page-L {
+    width: 100%;
+   }
+
+   #members-page-R {
+    width: 100%;
+    border-left: none;
+    min-height: 0;
+   }
+
+   #band-logo-image {
+       height: auto;
+   }
+
+
+
+   /*------------- nav -------------- */
+
+   .hamburger-icon {
+       display: block;
+   }
+  
+  #menu{
+      display: none;
+  }
+
+  #menu.is-active {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      left: 0;
+      background-color: rgba(0,0,0,0.25);
+      padding-bottom: 40px;
+      padding-left: 60px;
+      padding-top: 20px;
+  }
+
+  #menu > li {
+      margin-bottom: 12px;
+  }
+}
