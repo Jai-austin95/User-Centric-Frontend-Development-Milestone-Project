@@ -9,6 +9,7 @@ A live demo can be found [here]().
 
 ## UX
 With the design of the site I aimed towards a dark tone, white and black sleek design with some grey put in for features. As the band and its potential users will more or less be attracted to the darker portrayal of the band.
+The layout is smooth and easily operable, straight forward and clear. 
 
 
 ## Technologies
@@ -26,8 +27,6 @@ This site was tested across multiple browsers and on multiple mobile devices to 
 
 ## Deployment 
 This site is hosted using GitHub pages, deployed directly from the master branch. The live site updates automatically each time there is a new push to the repository. You can `git clone` the code to run it locally on your machine.
-
-## Credits
 
 ### Content
 I've written the basic structure and design of the entire website by myself, the site is laid out as a single page scroll down, with each section in its own sectoin. I have used some template code in my nav bar for the collapsable menu from w3schools for the Jave script as as far as my course has taken me we have not used java script hyet and this was a feature i wanted to include in my project.
