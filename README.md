@@ -14,6 +14,7 @@ With the design of the site I aimed towards a dark tone, white and black sleek d
 ## Technologies
 1. HTML
 2. CSS
+3. javascript
 
 ## Features
 The site has a fixed nav bar for ease of access to all parts of the page, with the logo acting as a return to top. the nav bar is also collapsable.
@@ -29,10 +30,16 @@ This site is hosted using GitHub pages, deployed directly from the master branch
 ## Credits
 
 ### Content
-All content in the home screen "about" "upcoming shows" and "band members" sections within the site have been written by me. 
+I've written the basic structure and design of the entire website by myself, the site is laid out as a single page scroll down, with each section in its own sectoin. I have used some template code in my nav bar for the collapsable menu from w3schools for the Jave script as as far as my course has taken me we have not used java script hyet and this was a feature i wanted to include in my project.
 
 ### Media 
 All photo media was given full permission by the band to use in this project, I was givin permission to upload them to an Imgur account in order to link them to the web page. Photos are not publicly released on imgur. 
 
 ### Acknowledgements
+
+w3schools for the javascript link.
+https://www.w3schools.com/jquery/html_toggleclass.asp
+
+codepen for the hamburger menu.
+https://codepen.io/designcouch/pen/Atyop?fbclid=IwAR3cUszE-V_OFBSLBYPM9AFFyPb3TqTpojMFTz5kDcznZ3El2gJueWBFDn8
 
