@@ -4,7 +4,7 @@ User Centric Frontend Development - Code Institute
 This sites aim is to promote the band Halveksia and promote the upcoming shows, while also giving an informative look at each band member and the genral direction of the band.
 
 ## Demo
-A live demo can be found [here]().
+A live demo can be found [here](https://jai-austin95.github.io/User-Centric-Frontend-Development-Milestone-Project/).
 
 
 ## UX
