@@ -485,6 +485,7 @@ justify-content: center;
    }
 
    #members-page-R {
+    display: none;
     width: 100%;
     border-left: none;
     min-height: 0;
