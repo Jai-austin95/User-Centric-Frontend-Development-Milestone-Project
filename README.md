@@ -18,7 +18,7 @@ The layout is smooth and easily operable, straight forward and clear.
 3. javascript
 
 ## Features
-The site has a fixed nav bar for ease of access to all parts of the page, with the logo acting as a return to top. the nav bar is also collapsable.
+The site has a fixed nav bar for ease of access to all parts of the page, with the logo acting as a return to top. the nav bar is also collapsable. A link to be able to purchase tickets and social links in the footer (please note that only the facebook one works due to there only being a facebook page for the band, no other social media pages exist.)
 
 
 ## Testing
@@ -30,6 +30,7 @@ This site is hosted using GitHub pages, deployed directly from the master branch
 
 ### Content
 I've written the basic structure and design of the entire website by myself, the site is laid out as a single page scroll down, with each section in its own sectoin. I have used some template code in my nav bar for the collapsable menu from w3schools for the Jave script as as far as my course has taken me we have not used java script hyet and this was a feature i wanted to include in my project.
+social links are provided in the bottom, though the only active link is to the official facebook page as the band does not have any other social media, thus making the instagram, twitter and youtube as dummy icons for effect.
 
 ### Media 
 All photo media was given full permission by the band to use in this project, I was givin permission to upload them to an Imgur account in order to link them to the web page. Photos are not publicly released on imgur. 
