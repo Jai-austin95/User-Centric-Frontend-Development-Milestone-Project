@@ -58,7 +58,7 @@ p {
 header {
 	position: fixed;
 	z-index: 1;
-	background-color: rgba(0, 0, 0, 0.25);
+	background-color: rgba(0, 0, 0, 0.75);
 	width: 100%;
 	top: 0;
 }
@@ -227,7 +227,7 @@ header {
 	color: #ffffff;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	padding-left: 10px;
+	padding-left: 60px;
 	background-color: rgba(0, 0, 0, 0.7);
 	bottom: 30px;
 	position: absolute;
@@ -347,6 +347,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+    box-shadow: 1px 3px 17px 5px #f0ab108a;
 }
 
 #show-card>ul>li {
@@ -378,7 +379,7 @@ header {
 #members-page-L>h1 {
 	text-align: left;
 	padding-top: 75px;
-	padding-left: 25px;
+	padding-left: 60px;
 }
 
 #members-page-L>h3 {
@@ -417,6 +418,7 @@ header {
 
 #band-logo-image {
 	width: 100%;
+    min-height: 754px;
 }
 
 
@@ -441,17 +443,36 @@ header {
 	padding: 25px;
 	justify-content: center;
 	text-decoration: none;
+	color: #ffffff solid;
+    letter-spacing: 10px;
+}
+
+#social-icon {
 	color: #ffffff;
 }
 
-#fb-icon {
-	color: rgba(98, 0, 255, 0.842)
-}
 
 
 /*-- Mobile (removes certain content for a better visual layout for mobile and resizes certain sections --*/
 
 @media only screen and (max-width: 768px) {
+    #band-info-1 {
+        justify-content: center;
+        text-align: center;
+    }
+    #band-info-1 h2{
+        padding: 0;
+    }
+    #band-info-1 p {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    #hidden-p-for-mobile {
+        display: none;
+    }
+    #hide-hr {
+        display: none;
+    }
 	#band-cover-text h4 {
 		display: none;
 	}
@@ -475,9 +496,11 @@ header {
 	}
 	#members-page {
 		flex-direction: column;
+        justify-content: center;
 	}
 	#members-page-L {
 		width: 100%;
+        justify-content: center;
 	}
 	#members-page-R {
 		display: none;
