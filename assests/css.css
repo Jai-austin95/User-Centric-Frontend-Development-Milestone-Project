@@ -1,423 +1,515 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
- @import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
- @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
- 
- /*-- used for smooth scrolling to each section of the page --*/ 
- html {
-     scroll-behavior: smooth;
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/*-- used for smooth scrolling to each section of the page --*/
+
+html {
+	scroll-behavior: smooth;
 }
+
+
 /*-- standard format inherited code --*/
- body {
-     background-color: #000000;
-     font-family: 'Lato', cursive;
+
+body {
+	background-color: #000000;
+	font-family: 'Lato', cursive;
 }
- h1, h2, h3, h4, h5, h6 {
-     font-family: 'Girassol', cursive;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Girassol', cursive;
 }
- p {
-     line-height: 2;
-     font-weight: 400;
-     color: #808080;
-     -webkit-font-smoothing: antialiased;
+
+p {
+	line-height: 2;
+	font-weight: 400;
+	color: #808080;
+	-webkit-font-smoothing: antialiased;
 }
+
+
 /* -------------- Generic ------------- */
- .button {
-     padding: 15px 30px;
-     background-color: #ffffff;
-     color: #000000;
-     display: inline-flex;
-     justify-content: center;
-     align-items: center;
-     text-decoration: none;
-     transition: background-color 300ms ease;
+
+.button {
+	padding: 15px 30px;
+	background-color: #ffffff;
+	color: #000000;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	transition: background-color 300ms ease;
 }
- .button:hover {
-     background-color: #a4a4a4;
-     color: #000000;
-     text-decoration: none;
+
+.button:hover {
+	background-color: #a4a4a4;
+	color: #000000;
+	text-decoration: none;
 }
+
+
 /* -------------- navigation ------------- */
- header {
-     position: fixed;
-     z-index: 1;
-     background-color: rgba(0, 0, 0, 0.25);
-     width: 100%;
-     top: 0;
+
+header {
+	position: fixed;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.25);
+	width: 100%;
+	top: 0;
 }
- #navbar {
-     display: flex;
-     position: relative;
-     width: 100%;
-     align-items: center;
-     padding: 20px 60px;
+
+#navbar {
+	display: flex;
+	position: relative;
+	width: 100%;
+	align-items: center;
+	padding: 20px 60px;
 }
- #logo {
-     letter-spacing: 3px;
-     font-size: 24px;
-     font-family: 'Girassol', cursive;
-     color: #ffffff;
+
+#logo {
+	letter-spacing: 3px;
+	font-size: 24px;
+	font-family: 'Girassol', cursive;
+	color: #ffffff;
 }
- #menu {
-     display: flex;
-     flex-wrap: wrap;
-     font-size: 16px;
-     list-style-type: none;
-     color: #ffffff;
-     margin-bottom: 0;
-     margin-left: auto;
+
+#menu {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 16px;
+	list-style-type: none;
+	color: #ffffff;
+	margin-bottom: 0;
+	margin-left: auto;
 }
- #menu li {
-     margin-right: 30px;
+
+#menu li {
+	margin-right: 30px;
 }
- #menu li:last-child {
-     margin-right: 0;
+
+#menu li:last-child {
+	margin-right: 0;
 }
- #logo a {
-     text-decoration: none;
-     color: #ffffff;
+
+#logo a {
+	text-decoration: none;
+	color: #ffffff;
 }
- #menu a {
-     text-decoration: none;
-     color: inherit;
+
+#menu a {
+	text-decoration: none;
+	color: inherit;
 }
- #menu a:hover{
-     border-bottom: 1px solid #ffffff;
+
+#menu a:hover {
+	border-bottom: 1px solid #ffffff;
 }
- .active {
-     border-bottom: 1px solid #ffffff;
+
+.active {
+	border-bottom: 1px solid #ffffff;
 }
+
+
 /*-- this section is for the hamburger menu button function/animation --*/
- .hamburger-icon {
-     display: none;
-     margin-left: auto;
+
+.hamburger-icon {
+	display: none;
+	margin-left: auto;
 }
- .hamburger-icon #nav-toggle {
-     color: #ffffff;
+
+.hamburger-icon #nav-toggle {
+	color: #ffffff;
 }
- .hamburger-icon {
-     width: 30px;
-     height: 24px;
-     position: relative;
-     -webkit-transform: rotate(0deg);
-     -moz-transform: rotate(0deg);
-     -o-transform: rotate(0deg);
-     transform: rotate(0deg);
-     -webkit-transition: .5s ease-in-out;
-     -moz-transition: .5s ease-in-out;
-     -o-transition: .5s ease-in-out;
-     transition: .5s ease-in-out;
-     cursor: pointer;
+
+.hamburger-icon {
+	width: 30px;
+	height: 24px;
+	position: relative;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
 }
- .hamburger-icon span {
-     display: block;
-     position: absolute;
-     height: 2px;
-     width: 100%;
-     background: #ffffff;
-     border-radius: 9px;
-     opacity: 1;
-     left: 0;
-     -webkit-transform: rotate(0deg);
-     -moz-transform: rotate(0deg);
-     -o-transform: rotate(0deg);
-     transform: rotate(0deg);
-     -webkit-transition: .25s ease-in-out;
-     -moz-transition: .25s ease-in-out;
-     -o-transition: .25s ease-in-out;
-     transition: .25s ease-in-out;
+
+.hamburger-icon span {
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	background: #ffffff;
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
 }
- .hamburger-icon span:nth-child(1) {
-     top: 0px;
+
+.hamburger-icon span:nth-child(1) {
+	top: 0px;
 }
- .hamburger-icon span:nth-child(2), .hamburger-icon span:nth-child(3) {
-     top: 12px;
+
+.hamburger-icon span:nth-child(2),
+.hamburger-icon span:nth-child(3) {
+	top: 12px;
 }
- .hamburger-icon span:nth-child(4) {
-     top: 24px;
+
+.hamburger-icon span:nth-child(4) {
+	top: 24px;
 }
- .hamburger-icon.open span:nth-child(1) {
-     top: 18px;
-     width: 0%;
-     left: 50%;
+
+.hamburger-icon.open span:nth-child(1) {
+	top: 18px;
+	width: 0%;
+	left: 50%;
 }
- .hamburger-icon.open span:nth-child(2) {
-     -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-     -o-transform: rotate(45deg);
-     transform: rotate(45deg);
+
+.hamburger-icon.open span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
- .hamburger-icon.open span:nth-child(3) {
-     -webkit-transform: rotate(-45deg);
-     -moz-transform: rotate(-45deg);
-     -o-transform: rotate(-45deg);
-     transform: rotate(-45deg);
+
+.hamburger-icon.open span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
- .hamburger-icon.open span:nth-child(4) {
-     top: 18px;
-     width: 0%;
-     left: 50%;
+
+.hamburger-icon.open span:nth-child(4) {
+	top: 18px;
+	width: 0%;
+	left: 50%;
 }
+
+
 /* ----------- Main Page -----------*/
- #band-photo {
-     height: 600px;
-     width: 100%;
-     background: url("https://i.imgur.com/8Wqfad4.jpg") no-repeat center center;
-     background-size: cover;
-     z-index: -1;
+
+#band-photo {
+	height: 600px;
+	width: 100%;
+	background: url("https://i.imgur.com/8Wqfad4.jpg") no-repeat center center;
+	background-size: cover;
+	z-index: -1;
 }
- #band-photo-outer {
-     height: 600px;
-     width: 100%;
-     overflow: hidden;
-     position: relative;
-     margin-top: 80px;
+
+#band-photo-outer {
+	height: 600px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin-top: 80px;
 }
+
+
 /*-- an overlay div used to produce text on a transparent box ontop the main home image --*/
- #band-cover-text {
-     font-size: 50%;
-     letter-spacing: 4px;
-     color: #ffffff;
-     padding-top: 40px;
-     padding-bottom: 40px;
-     padding-left: 10px;
-     background-color: rgba(0, 0, 0, 0.7);
-     bottom: 30px;
-     position: absolute;
+
+#band-cover-text {
+	font-size: 50%;
+	letter-spacing: 4px;
+	color: #ffffff;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 10px;
+	background-color: rgba(0, 0, 0, 0.7);
+	bottom: 30px;
+	position: absolute;
 }
- #band-cover-text h4 {
-     font-family: "lato", sans-serif;
-     font-weight: 400;
-     -webkit-font-smoothing: antialiased;
+
+#band-cover-text h4 {
+	font-family: "lato", sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
 }
+
+
 /* ----------- About Page -----------*/
+
+
 /*-- this container houses 2 div sections which hold the main content of this section, this rule follows for the follwing secitons too --*/
- #band-logo-outer {
-     display: flex;
-     justify-content: center;
-     width: 100%;
-     border-top: 4px solid #ffffff;
+
+#band-logo-outer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	border-top: 4px solid #ffffff;
 }
- #band-info-1 {
-     padding-top: 75px;
-     padding-bottom: 75px;
-     max-width: 800px;
-     width: 100%;
-     background-color: rgba(0, 0, 0, 0.25);
-     color: #ffffff;
-     text-align: left;
+
+#band-info-1 {
+	padding-top: 75px;
+	padding-bottom: 75px;
+	max-width: 800px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.25);
+	color: #ffffff;
+	text-align: left;
 }
- #band-info-1 > h2 {
-     padding-left: 25px;
-     letter-spacing: 2px;
+
+#band-info-1>h2 {
+	padding-left: 25px;
+	letter-spacing: 2px;
 }
- #band-info-1 > p {
-     letter-spacing: 2px;
-     padding-right: 50px;
-     padding-left: 25px;
+
+#band-info-1>p {
+	letter-spacing: 2px;
+	padding-right: 50px;
+	padding-left: 25px;
 }
- #band-info-2 > h2 {
-     padding-top: 40px;
-     padding-left: 38px;
-     letter-spacing: 2px;
+
+#band-info-2>h2 {
+	padding-top: 40px;
+	padding-left: 38px;
+	letter-spacing: 2px;
 }
- #band-info-2 > p {
-     letter-spacing: 2px;
-     padding-left: 38px;
+
+#band-info-2>p {
+	letter-spacing: 2px;
+	padding-left: 38px;
 }
- #band-info-2 > ul > li {
-     padding-right: 25px;
-     letter-spacing: 2px;
-     list-style: none;
+
+#band-info-2>ul>li {
+	padding-right: 25px;
+	letter-spacing: 2px;
+	list-style: none;
 }
+
+
 /*------------ Up Coming Shows ------------ */
- #up-coming-shows {
-     display: flex;
-     min-height: 725px;
-     width: 100%;
+
+#up-coming-shows {
+	display: flex;
+	min-height: 725px;
+	width: 100%;
 }
- #up-coming-shows-1 {
-     min-height: 725px;
-     width: 50%;
-     background-image: url("https://i.imgur.com/YPnymL2.jpg");
-     background-size: contain;
-     background-repeat: no-repeat;
-     background-position: center;
-     color: #ffffff;
-     border-top: 4px solid #ffffff;
-     border-bottom: 4px solid #ffffff;
-     margin: 0 auto;
+
+#up-coming-shows-1 {
+	min-height: 725px;
+	width: 50%;
+	background-image: url("https://i.imgur.com/YPnymL2.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #ffffff;
+	border-top: 4px solid #ffffff;
+	border-bottom: 4px solid #ffffff;
+	margin: 0 auto;
 }
+
+
 /*-- section includes the show card and external link to purchase tickets --*/
- #up-coming-shows-2 {
-     min-height: 725px;
-     width: 50%;
-     background-color: #000000;
-     color: #ffffff;
-     border-top: 4px solid #ffffff;
-     border-left: 4px solid #ffffff;
-     border-bottom: 4px solid #ffffff;
-     text-align: center;
+
+#up-coming-shows-2 {
+	min-height: 725px;
+	width: 50%;
+	background-color: #000000;
+	color: #ffffff;
+	border-top: 4px solid #ffffff;
+	border-left: 4px solid #ffffff;
+	border-bottom: 4px solid #ffffff;
+	text-align: center;
 }
- #up-coming-shows-2 h1 {
-     text-align: center;
-     padding-top: 125px;
+
+#up-coming-shows-2 h1 {
+	text-align: center;
+	padding-top: 125px;
 }
+
+
 /*-- this is used for the link to the external ticket sale site for visual effect --*/
- #show-card {
-     padding: 0;
-     height:250px;
-     max-width: 375px;
-     width: 100%;
-     margin: 0 auto;
-     background-color: rgba(163, 162, 162, 0.452);
-     background-position: center;
-     text-align: center;
-     border: 3px #ffffff solid;
-     display: flex;
-     align-items: center;
-     justify-content: center;
+
+#show-card {
+	padding: 0;
+	height: 250px;
+	max-width: 375px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: rgba(163, 162, 162, 0.452);
+	background-position: center;
+	text-align: center;
+	border: 3px #ffffff solid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
- #show-card > ul > li {
-     list-style: none;
-     text-align: center;
+
+#show-card>ul>li {
+	list-style: none;
+	text-align: center;
 }
- #show-card p {
-     color: #ffffff;
+
+#show-card p {
+	color: #ffffff;
 }
+
+
 /*-- Band Members section --*/
- #members-page {
-     display: flex;
-     min-height: 725px;
-     width: 100%;
+
+#members-page {
+	display: flex;
+	min-height: 725px;
+	width: 100%;
 }
- #members-page-L {
-     min-height: 725px;
-     width: 50%;
-     color: #ffffff;
-     border-top: 4px solid #ffffff;
-     margin: 0 auto;
+
+#members-page-L {
+	min-height: 725px;
+	width: 50%;
+	color: #ffffff;
+	border-top: 4px solid #ffffff;
+	margin: 0 auto;
 }
- #members-page-L > h1 {
-     text-align: left;
-     padding-top: 75px;
-     padding-left: 25px;
+
+#members-page-L>h1 {
+	text-align: left;
+	padding-top: 75px;
+	padding-left: 25px;
 }
- #members-page-L > h3 {
-     padding-left: 25px;
-     padding-top: 50px;
-     text-transform: uppercase;
+
+#members-page-L>h3 {
+	padding-left: 25px;
+	padding-top: 50px;
+	text-transform: uppercase;
 }
- #members-page-R {
-     min-height: 725px;
-     width: 50%;
-     background-color: #000000;
-     color: #ffffff;
-     margin: 0 auto;
-     border-top: 4px solid #ffffff;
-     border-left: 4px solid #ffffff;
+
+#members-page-R {
+	min-height: 725px;
+	width: 50%;
+	background-color: #000000;
+	color: #ffffff;
+	margin: 0 auto;
+	border-top: 4px solid #ffffff;
+	border-left: 4px solid #ffffff;
 }
- #members-page-L > ul {
-     padding-left: 20px;
-     padding-right: 20px;
+
+#members-page-L>ul {
+	padding-left: 20px;
+	padding-right: 20px;
 }
- #members-page-L > ul > li {
-     padding: 3px 5px;
-     letter-spacing: 2px;
-     list-style: none;
-     display: flex;
-     align-items: center;
-     margin-bottom: 12px;
+
+#members-page-L>ul>li {
+	padding: 3px 5px;
+	letter-spacing: 2px;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
 }
- #members-page-L > ul > li > p {
-     padding-left: 12px;
+
+#members-page-L>ul>li>p {
+	padding-left: 12px;
 }
- #band-logo-image {
-     width: 100%;
+
+#band-logo-image {
+	width: 100%;
 }
+
+
 /*-- creates a circle container for each image --*/
- .member-photo {
-     height: 100px;
-     width: 100px;
-     border-style: solid;
-     border-color: #cccccc;
-     border-width: 3px;
-     border-radius: 50%;
+
+.member-photo {
+	height: 100px;
+	width: 100px;
+	border-style: solid;
+	border-color: #cccccc;
+	border-width: 3px;
+	border-radius: 50%;
 }
+
+
 /*-- Footer --*/
- #footer a {
-     font-size: 25px;
-     display: flex;
-     width: 100%;
-     padding: 25px;
-     justify-content: center;
-     text-decoration: none;
-     color: #ffffff;
+
+#footer a {
+	font-size: 25px;
+	display: flex;
+	width: 100%;
+	padding: 25px;
+	justify-content: center;
+	text-decoration: none;
+	color: #ffffff;
 }
- #fb-icon {
-     color: rgba(98, 0, 255, 0.842) 
+
+#fb-icon {
+	color: rgba(98, 0, 255, 0.842)
 }
+
+
 /*-- Mobile (removes certain content for a better visual layout for mobile and resizes certain sections --*/
- @media only screen and (max-width: 768px) {
 
-    #band-cover-text h4 {
-     display: none;
-    }
-
-     #up-coming-shows {
-         flex-direction: column;
-    }
-     #up-coming-shows-1 {
-         min-height: 480px;
-         width: 100% 
-    }
-     #up-coming-shows-2 {
-         width: 100%;
-         border-left: none;
-         min-height: 390px;
-    }
-     #up-coming-shows-2 h1 {
-         padding-top: 25px;
-    }
-     #up-coming-shows-2 h2 {
-         padding-bottom: 25px;
-    }
-     #members-page {
-         flex-direction: column;
-    }
-     #members-page-L {
-         width: 100%;
-    }
-     #members-page-R {
-         display: none;
-         width: 100%;
-         border-left: none;
-         min-height: 0;
-    }
-     #band-logo-image {
-         height: auto;
-    }
-    /*-- navigation edited for mobile devices -- */
-     .hamburger-icon {
-         display: block;
-    }
-     #menu{
-         display: none;
-    }
-     #menu.is-active {
-         display: block;
-         position: absolute;
-         width: 100%;
-         top: 100%;
-         left: 0;
-         background-color: rgba(0,0,0,0.25);
-         padding-bottom: 40px;
-         padding-left: 60px;
-         padding-top: 20px;
-    }
-     #menu > li {
-         margin-bottom: 12px;
-    }
-     #footer {
-         padding: 0;
-    }
+@media only screen and (max-width: 768px) {
+	#band-cover-text h4 {
+		display: none;
+	}
+	#up-coming-shows {
+		flex-direction: column;
+	}
+	#up-coming-shows-1 {
+		min-height: 480px;
+		width: 100%
+	}
+	#up-coming-shows-2 {
+		width: 100%;
+		border-left: none;
+		min-height: 390px;
+	}
+	#up-coming-shows-2 h1 {
+		padding-top: 25px;
+	}
+	#up-coming-shows-2 h2 {
+		padding-bottom: 25px;
+	}
+	#members-page {
+		flex-direction: column;
+	}
+	#members-page-L {
+		width: 100%;
+	}
+	#members-page-R {
+		display: none;
+		width: 100%;
+		border-left: none;
+		min-height: 0;
+	}
+	#band-logo-image {
+		height: auto;
+	}
+	/*-- navigation edited for mobile devices -- */
+	.hamburger-icon {
+		display: block;
+	}
+	#menu {
+		display: none;
+	}
+	#menu.is-active {
+		display: block;
+		position: absolute;
+		width: 100%;
+		top: 100%;
+		left: 0;
+		background-color: rgba(0, 0, 0, 0.25);
+		padding-bottom: 40px;
+		padding-left: 60px;
+		padding-top: 20px;
+	}
+	#menu>li {
+		margin-bottom: 12px;
+	}
+	#footer {
+		padding: 0;
+	}
 }
