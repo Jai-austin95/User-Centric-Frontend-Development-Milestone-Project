@@ -349,6 +349,11 @@
 }
 /*-------------- Mobile -------------*/
  @media only screen and (max-width: 768px) {
+
+    #band-cover-text h4 {
+     display: none;
+    }
+
      #up-coming-shows {
          flex-direction: column;
     }
