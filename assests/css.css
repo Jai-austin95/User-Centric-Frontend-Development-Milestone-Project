@@ -458,14 +458,16 @@ header {
 @media only screen and (max-width: 768px) {
     #band-info-1 {
         justify-content: center;
-        text-align: center;
+        text-align: left;
     }
     #band-info-1 h2{
-        padding: 0;
+        text-align: center;
+        padding-right: 15%;
+        padding-left: 15%;
     }
     #band-info-1 p {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     #hidden-p-for-mobile {
         display: none;
